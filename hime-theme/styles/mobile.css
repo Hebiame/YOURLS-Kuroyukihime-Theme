@@ -1,0 +1,32 @@
+body {
+	background: white;
+}
+
+main {
+	padding: 0;
+	width: 100vw;
+	border: none;
+	box-shadow: none;
+}
+
+.main-content {
+	min-width: 40vw;
+	max-width: 90vw;
+	padding: 25vw 0 25vw 0;
+	
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+}
+
+@media screen and (orientation:landscape) {
+footer {
+	position: relative;
+}
+
+.main-content {
+	padding: 5% 0;
+}
+}

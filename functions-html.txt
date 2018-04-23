@@ -1,0 +1,26 @@
+/**
+ * Die die die
+ *
+ */
+function yourls_die( $message = '', $title = '', $header_code = 200 ) {
+    yourls_do_action( 'pre_yourls_die', $message, $title, $header_code );
+
+	yourls_status_header( $header_code );
+
+	if( !yourls_did_action( 'html_head' ) ) {
+		//yourls_html_head();
+		//yourls_html_logo();
+		hime_html_head();
+		echo( '<section class="main-content">' );
+	}
+	echo yourls_apply_filter( 'die_title', "<h2>$title</h2>" );
+	echo yourls_apply_filter( 'die_message', "<h3>$message</h3>" );
+    // Hook into 'yourls_die' to add more elements or messages to that page
+	yourls_do_action( 'yourls_die' );
+	if( !yourls_did_action( 'html_footer' ) ) {
+		//yourls_html_footer(false);
+		echo( '</section>' );
+		hime_html_footer();
+	}
+	die();
+}

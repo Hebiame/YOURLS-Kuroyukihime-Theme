@@ -1,0 +1,25 @@
+body, footer {
+	min-width: 500px;
+}
+
+main {
+	background: white url(../img/background.png) no-repeat right bottom;
+	background-size: contain;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	min-height: 200px;
+	width: 100%;
+}
+
+.main-content {
+	width: 40%;
+	min-width: 450px;
+	padding: 6% 0;
+}
+
+@media only screen and (max-width: 999px) {
+main {
+	background: white;
+}
+}
