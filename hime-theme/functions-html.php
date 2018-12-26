@@ -78,6 +78,7 @@ function hime_html_head( $context = 'index', $title = '' )
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 	<link rel="icon" type="image/png" href="/hime-theme/img/favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="/hime-theme/img/favicon-16x16.png" sizes="16x16" />
 	<link rel="stylesheet" href="<?php yourls_site_url(); ?>/hime-theme/styles/main.css" type="text/css" media="screen" />
@@ -125,6 +126,11 @@ function hime_html_head( $context = 'index', $title = '' )
 </head>
 <body class="<?php echo $context; ?> <?php echo $bodyclass; ?>">
 <main>
+	<div id="thanks-section">
+		<ul>Thanks <span style="font-size: 30px">&#10084</span>
+			<li>Filip, Aleksandra</li>
+		</ul>
+	</div> 
 	<?php
 }
 

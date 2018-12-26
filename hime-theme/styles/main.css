@@ -81,6 +81,7 @@ h3 {
 main {
 	background-color: white;
 	width: 100%;
+	position: relative;
 }
 
 .main-content {
@@ -265,4 +266,27 @@ footer ul li a {
 
 footer ul li a:hover {
 	color: #ddd;
+}
+
+#thanks-section {
+	text-align: left;
+	position: absolute;
+	bottom: 0;
+	left:0;
+	color:#914545;
+	font-size: 18px;
+	padding: 10px 15px 0 15px;
+}
+
+#thanks-section ul {
+	font-size: 40px;
+	list-style: none;
+	padding-inline-start: 0;
+	font-family: 'Dancing Script', cursive;
+	margin: 40px 0 10px 0;
+}
+
+#thanks-section ul li {
+	padding: 5px 0;
+	font-size: 23px;
 }
